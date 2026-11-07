@@ -1,0 +1,4 @@
+    PID  RUID  EUID COMMAND         COMMAND
+   1234  1000     0 fusermount3     fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+   2095  1000     0 su              su - user1
+   2140  1234     0 passwd          passwd

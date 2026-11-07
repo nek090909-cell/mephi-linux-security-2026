@@ -1,0 +1,43 @@
+    1  sudo groupadd students
+    2  sudo useradd -m -n 1234 -G students user1
+    3  sudo passwd user1
+    4  sudo useraddd -m
+    5  sudo useradd -m
+    6  -u
+    7  sudo groupadd students
+    8  sudo useradd -m -u 1234 -G students user1
+    9  sudo passwd user1
+   10  sudo useradd -m -u 1234 -G students user1
+   11  sudo passwd user1
+   12  sudo chage -M 90 user1
+   13  id user1
+   14  sudo find / -perm -4000 -type f 2>/dev/null > ~/suid_files.out
+   15  su - user1
+   16  cat ~/suid_files.out
+   17  ps -eo pid,ruid,euid,comm,args | awk 'NR==1 || ($3==0 && $2>=1000)'
+   18  su - user1
+   19  sudo cp /usr/bin/cat /home/user1/mycat
+   20  sudo chown root:root /home/user1/mycat
+   21   su - user1
+   22  sudo - user1
+   23  su - user1
+   24  su - user1 ~/mycat /etc/shadow
+   25  su -user1
+   26  su - user1
+   27  sudo chmod u+s /home/user1/mycat
+   28  su - user1
+   29  sudo setcap cap_chown+ep /home/user1/mychown
+   30  getcap /home/user1/mychown
+   31  su - user1
+   32  which date
+   33  which timedatect1
+   34  sudo visudo
+   35  sudo -l -u user1
+   36  sudo -l -U user1
+   37  which date
+   38  which timedatectl
+   39   sudo visudo
+   40  sudo -l -U user1
+   41  su - user1
+   42  echo 374276
+   43  history > ~/history.out

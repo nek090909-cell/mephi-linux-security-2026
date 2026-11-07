@@ -1,0 +1,19 @@
+    1  passwd
+    2  exit
+    3  ~/mycat /etc/shadow
+    4  exit
+    5  ~/mycat /etc/shadow
+    6  exit
+    7  ~/mycat /etc/shadow
+    8  exit
+    9  cp /usr/bin/chown ~/mychown
+   10  touch ~/test.txt
+   11  ~/mychown root ~/test.txt
+   12  exit
+   13  ~/mychown root ~/test.txt
+   14  ls -l ~/test.txt
+   15  exit
+   16  sudo date -s "+1 minute"
+   17  sudo date -s "-1 minute"
+   18  exit
+   19  history > ~/history_user1.out
